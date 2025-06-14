@@ -1,9 +1,9 @@
 {
   "type": "minecraft:jigsaw",
-  "start_pool": "cinchsvillagerstatues:villager_statue_4/start_pool",
+  "start_pool": "cinchsvillagerstatues:villager_statue_5/start_pool",
   "size": 2,
   "max_distance_from_center": 80,
-  "biomes": "#cinchsvillagerstatues:has_structure/villager_statue_4",
+  "biomes": "#cinchsvillagerstatues:has_structure/villager_statue_5",
   "step": "surface_structures",
   "terrain_adaptation": "beard_thin",
   "start_height": {

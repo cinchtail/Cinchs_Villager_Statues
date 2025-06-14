@@ -1,6 +1,5 @@
 {
   "values": [
-    "minecraft:jungle",
-    "minecraft:sparse_jungle"
+    "#minecraft:is_jungle"
   ]
 }

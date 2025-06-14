@@ -5,41 +5,54 @@
       "rules": [
         {
           "input_predicate": {
-            "block": "minecraft:stone_bricks",
-            "probability": 0.2,
+            "block": "minecraft:smooth_red_sandstone",
+            "probability": 0.3,
             "predicate_type": "minecraft:random_block_match"
           },
           "location_predicate": {
             "predicate_type": "minecraft:always_true"
           },
           "output_state": {
-            "Name": "minecraft:mossy_stone_bricks"
+            "Name": "minecraft:red_sandstone"
           }
         },
         {
           "input_predicate": {
-            "block": "minecraft:stone_bricks",
-            "probability": 0.2,
+            "block": "minecraft:smooth_red_sandstone",
+            "probability": 0.3,
             "predicate_type": "minecraft:random_block_match"
           },
           "location_predicate": {
             "predicate_type": "minecraft:always_true"
           },
           "output_state": {
-            "Name": "minecraft:cracked_stone_bricks"
+            "Name": "minecraft:cut_red_sandstone"
           }
         },
         {
           "input_predicate": {
-            "block": "minecraft:cobblestone",
-            "probability": 0.2,
+            "block": "minecraft:smooth_red_sandstone_slab",
+            "probability": 0.1,
             "predicate_type": "minecraft:random_block_match"
           },
           "location_predicate": {
             "predicate_type": "minecraft:always_true"
           },
           "output_state": {
-            "Name": "minecraft:mossy_cobblestone"
+            "Name": "minecraft:cut_red_sandstone_slab"
+          }
+        },
+        {
+          "input_predicate": {
+            "block": "minecraft:smooth_red_sandstone_slab",
+            "probability": 0.1,
+            "predicate_type": "minecraft:random_block_match"
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "output_state": {
+            "Name": "minecraft:cut_red_sandstone_slab"
           }
         }
       ]
