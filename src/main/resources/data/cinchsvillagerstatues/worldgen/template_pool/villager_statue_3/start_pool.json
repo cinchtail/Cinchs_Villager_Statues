@@ -1,0 +1,24 @@
+{
+  "name": "cinchsvillagerstatues:villager_ruin_3/start_pool",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "cinchsvillagerstatues:villager_ruins/villager_ruin_3",
+        "processors": "cinchsvillagerstatues:polished_andesite_to_stone_bricks",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "cinchsvillagerstatues:villager_ruins/villager_ruin_3_treasure",
+        "processors": "cinchsvillagerstatues:polished_andesite_to_stone_bricks",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

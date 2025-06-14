@@ -1,0 +1,24 @@
+{
+  "name": "cinchsvillagerstatues:villager_ruin_4/start_pool",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "cinchsvillagerstatues:villager_ruins/villager_ruin_4",
+        "processors": "cinchsvillagerstatues:make_cobblestone_mossy",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "cinchsvillagerstatues:villager_ruins/villager_ruin_4_treasure",
+        "processors": "cinchsvillagerstatues:make_cobblestone_mossy",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}
