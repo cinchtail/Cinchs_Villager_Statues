@@ -15,12 +15,16 @@
     {
       "structure": "cinchsvillagerstatues:villager_statue_4",
       "weight": 1
+    },
+    {
+      "structure": "cinchsvillagerstatues:villager_statue_5",
+      "weight": 1
     }
   ],
   "placement": {
     "salt": 1642136474,
-    "spacing": 60,
-    "separation": 50,
+    "spacing": 40,
+    "separation": 30,
     "type": "minecraft:random_spread"
   }
 }

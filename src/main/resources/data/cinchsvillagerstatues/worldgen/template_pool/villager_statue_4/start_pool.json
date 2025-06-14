@@ -5,8 +5,8 @@
     {
       "weight": 1,
       "element": {
-        "location": "cinchsvillagerstatues:villager_ruins/villager_ruin_4",
-        "processors": "cinchsvillagerstatues:make_cobblestone_mossy",
+        "location": "cinchsvillagerstatues:villager_statues/villager_statue_4",
+        "processors": "cinchsvillagerstatues:villager_statue_4_processor",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
       }
@@ -14,8 +14,8 @@
     {
       "weight": 1,
       "element": {
-        "location": "cinchsvillagerstatues:villager_ruins/villager_ruin_4_treasure",
-        "processors": "cinchsvillagerstatues:make_cobblestone_mossy",
+        "location": "cinchsvillagerstatues:villager_statues/villager_statue_4_emerald",
+        "processors": "cinchsvillagerstatues:villager_statue_4_processor",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
       }

@@ -1,6 +1,5 @@
 package net.cinchtail.cinchsvillagerstatues;
 
-
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
