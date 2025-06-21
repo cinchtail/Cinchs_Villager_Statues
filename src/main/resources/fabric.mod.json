@@ -8,8 +8,8 @@
     	"Cinchtail"
     ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/cinchtail/Cinchs_Abandoned_Houses"
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/cinchs-villager-statues",
+    "sources": "https://github.com/cinchtail/Cinchs_Villager_Statues/tree/Forge-Fabric-1.20.x"
   },
     "license": "MIT",
     "environment": "*",
