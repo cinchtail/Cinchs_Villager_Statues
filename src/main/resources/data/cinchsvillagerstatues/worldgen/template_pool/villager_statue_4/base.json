@@ -1,0 +1,15 @@
+{
+  "name": "cinchsvillagerstatues:villager_statue_4/base",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 4,
+      "element": {
+        "location": "cinchsvillagerstatues:villager_statues/villager_statue_4_base_1",
+        "processors": "cinchsvillagerstatues:villager_statue_4_processor",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}
