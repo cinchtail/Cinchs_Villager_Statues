@@ -9,7 +9,7 @@
 	],
 	"contact": {
 		"homepage": "https://www.curseforge.com/minecraft/mc-mods/cinchs-villager-statues",
-		"sources": "https://github.com/cinchtail/Fully_Farmable_Sand/tree/Fabric-1.21.1"
+		"sources": "https://github.com/cinchtail/Cinchs_Villager_Statues/tree/Forge-Fabric-1.21.x"
 	},
 	"license": "MIT",
 	"environment": "*",
