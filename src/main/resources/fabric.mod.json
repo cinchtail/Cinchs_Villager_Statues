@@ -1,0 +1,27 @@
+{
+	"schemaVersion": 1,
+	"id": "cinchsvillagerstatues",
+	"version": "${version}",
+	"name": "Cinch's Villager Statues",
+	"description": "Statues of villagers can be found around the world.",
+	"authors": [
+		"Cinchtail"
+	],
+	"contact": {
+		"homepage": "https://www.curseforge.com/minecraft/mc-mods/cinchs-villager-statues",
+		"sources": "https://github.com/cinchtail/Fully_Farmable_Sand/tree/Fabric-1.21.1"
+	},
+	"license": "MIT",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.cinchtail.cinchtail.cinchsvillagerstatues"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": ["1.21","1.21.1","1.21.2","1.21.3","1.21.4","1.21.5","1.21.6"],
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}

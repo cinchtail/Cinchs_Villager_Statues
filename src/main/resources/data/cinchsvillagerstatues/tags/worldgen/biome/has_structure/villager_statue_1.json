@@ -1,0 +1,19 @@
+{
+  "values": [
+    "#minecraft:is_hill",
+    "#minecraft:is_savanna",
+    "minecraft:taiga",
+    "minecraft:plains",
+    "minecraft:meadow",
+    "minecraft:forest",
+    "minecraft:old_growth_spruce_taiga",
+    "minecraft:flower_forest",
+    "minecraft:birch_forest",
+    "minecraft:dark_forest",
+    "minecraft:stony_peaks",
+    "minecraft:old_growth_pine_taiga",
+    "minecraft:sunflower_plains",
+    "minecraft:old_growth_birch_forest",
+    "minecraft:cherry_grove"
+  ]
+}
