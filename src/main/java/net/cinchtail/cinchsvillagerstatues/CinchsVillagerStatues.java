@@ -1,22 +1,11 @@
 package net.cinchtail.cinchsvillagerstatues;
 
-import net.minecraftforge.api.distmarker.Dist;
-import net.minecraftforge.event.server.ServerStartingEvent;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
-@Mod(CinchsVillagerStatues.MODID)
+@Mod(CinchsVillagerStatues.MOD_ID)
 public class CinchsVillagerStatues {
-    public static final String MODID = "cinchsvillagerstatues";
-
-    public CinchsVillagerStatues() {
-    }
-
-    @SubscribeEvent
-    public void onServerStarting(ServerStartingEvent event) {
-    }
-
-    @Mod.EventBusSubscriber(modid = MODID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
-    public static class ClientModEvents {
-    }
+    public static final String MOD_ID = "cinchsvillagerstatues";
+    public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 }
