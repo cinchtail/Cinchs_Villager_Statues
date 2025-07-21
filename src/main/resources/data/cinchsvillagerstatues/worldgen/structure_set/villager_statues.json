@@ -1,31 +1,31 @@
 {
   "structures": [
     {
-      "structure": "cinchsvillagerstatues:villager_statue_1",
+      "structure": "cinchsvillagerstatues:villager_statue_common",
       "weight": 1
     },
     {
-      "structure": "cinchsvillagerstatues:villager_statue_2",
+      "structure": "cinchsvillagerstatues:villager_statue_desert",
       "weight": 1
     },
     {
-      "structure": "cinchsvillagerstatues:villager_statue_3",
+      "structure": "cinchsvillagerstatues:villager_statue_snowy",
       "weight": 1
     },
     {
-      "structure": "cinchsvillagerstatues:villager_statue_4",
+      "structure": "cinchsvillagerstatues:villager_statue_jungle",
       "weight": 1
     },
     {
-      "structure": "cinchsvillagerstatues:villager_statue_5",
+      "structure": "cinchsvillagerstatues:villager_statue_badlands",
       "weight": 1
     },
     {
-      "structure": "cinchsvillagerstatues:villager_statue_6",
+      "structure": "cinchsvillagerstatues:villager_statue_swamp",
       "weight": 1
     },
     {
-      "structure": "cinchsvillagerstatues:villager_statue_7",
+      "structure": "cinchsvillagerstatues:villager_statue_mangrove_swamp",
       "weight": 1
     }
   ],
