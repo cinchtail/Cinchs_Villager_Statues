@@ -12,6 +12,7 @@
     "sources": "https://github.com/cinchtail/Cinchs_Villager_Statues/tree/Forge-Fabric-1.20.x"
   },
     "license": "MIT",
+    "icon": "icon.png",
     "environment": "*",
     "depends": {
     	"fabricloader": ">=0.16.14",
