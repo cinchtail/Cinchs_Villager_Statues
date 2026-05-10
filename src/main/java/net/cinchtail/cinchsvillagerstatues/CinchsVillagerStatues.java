@@ -11,11 +11,9 @@ public class CinchsVillagerStatues {
 
     public CinchsVillagerStatues() {
     }
-
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event) {
     }
-
     @Mod.EventBusSubscriber(modid = MODID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
     public static class ClientModEvents {
     }
