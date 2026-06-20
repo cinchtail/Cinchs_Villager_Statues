@@ -11,14 +11,14 @@
               "add": false,
               "count": {
                 "type": "minecraft:uniform",
-                "max": 3.0,
+                "max": 4.0,
                 "min": 1.0
               },
               "function": "minecraft:set_count"
             }
           ],
           "name": "minecraft:iron_ingot",
-          "weight": 10
+          "weight": 5
         },
         {
           "type": "minecraft:item",
@@ -27,7 +27,7 @@
               "add": false,
               "count": {
                 "type": "minecraft:uniform",
-                "max": 3.0,
+                "max": 4.0,
                 "min": 1.0
               },
               "function": "minecraft:set_count"
@@ -38,8 +38,8 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:iron_pickaxe",
-          "weight": 5
+          "name": "minecraft:iron_axe",
+          "weight": 2
         },
         {
           "type": "minecraft:item",
@@ -56,11 +56,6 @@
           ],
           "name": "minecraft:bread",
           "weight": 10
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:book",
-          "weight": 3
         },
         {
           "type": "minecraft:item",
@@ -111,7 +106,7 @@
               "add": false,
               "count": {
                 "type": "minecraft:uniform",
-                "max": 2.0,
+                "max": 3.0,
                 "min": 1.0
               },
               "function": "minecraft:set_count"
@@ -123,8 +118,8 @@
       ],
       "rolls": {
         "type": "minecraft:uniform",
-        "max": 8.0,
-        "min": 4.0
+        "max": 10.0,
+        "min": 6.0
       }
     }
   ],

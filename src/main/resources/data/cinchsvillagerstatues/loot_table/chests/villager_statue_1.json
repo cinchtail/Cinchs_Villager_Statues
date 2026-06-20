@@ -18,7 +18,7 @@
             }
           ],
           "name": "minecraft:iron_ingot",
-          "weight": 10
+          "weight": 5
         },
         {
           "type": "minecraft:item",
@@ -39,7 +39,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:iron_pickaxe",
-          "weight": 5
+          "weight": 2
         },
         {
           "type": "minecraft:item",
@@ -64,7 +64,7 @@
               "add": false,
               "count": {
                 "type": "minecraft:uniform",
-                "max": 5.0,
+                "max": 4.0,
                 "min": 1.0
               },
               "function": "minecraft:set_count"
@@ -72,10 +72,6 @@
           ],
           "name": "minecraft:apple",
           "weight": 10
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:book"
         },
         {
           "type": "minecraft:item",
@@ -99,7 +95,7 @@
               "add": false,
               "count": {
                 "type": "minecraft:uniform",
-                "max": 4.0,
+                "max": 3.0,
                 "min": 1.0
               },
               "function": "minecraft:set_count"
@@ -115,20 +111,20 @@
               "add": false,
               "count": {
                 "type": "minecraft:uniform",
-                "max": 2.0,
+                "max": 3.0,
                 "min": 1.0
               },
               "function": "minecraft:set_count"
             }
           ],
-          "name": "minecraft:oak_sapling",
-          "weight": 5
+          "name": "minecraft:leather",
+          "weight": 10
         }
       ],
       "rolls": {
         "type": "minecraft:uniform",
-        "max": 8.0,
-        "min": 4.0
+        "max": 10.0,
+        "min": 6.0
       }
     }
   ],

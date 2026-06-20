@@ -19,3 +19,16 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+------------------------------------------
+ADDITIONAL TERMS FOR NBT STRUCTURE FILES
+------------------------------------------
+
+All files with the ".nbt" extension included in this project are
+Copyright (c) 2024 Cinchtail. All Rights Reserved.
+
+No permission is granted to copy, modify, distribute, or otherwise use
+any .nbt files contained in this project without explicit written
+permission from the copyright holder.
+
+These .nbt files are NOT covered by the MIT License above.
