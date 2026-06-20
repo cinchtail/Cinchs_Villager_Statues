@@ -2,16 +2,16 @@
     "schemaVersion": 1,
     "id": "cinchsvillagerstatues",
     "version": "${version}",
-    "name": "Cinch's Villager Statues",
-    "description": "Statues of villagers can be found around the world.",
+    "name": "${mod_name}",
+    "description": "${mod_description}",
     "authors": [
-    	"Cinchtail"
+      "${mod_authors}"
     ],
   "contact": {
     "homepage": "https://www.curseforge.com/minecraft/mc-mods/cinchs-villager-statues",
     "sources": "https://github.com/cinchtail/Cinchs_Villager_Statues/tree/Forge-Fabric-1.20.x"
   },
-    "license": "MIT",
+    "license": "${mod_license}",
     "icon": "icon.png",
     "environment": "*",
     "depends": {
