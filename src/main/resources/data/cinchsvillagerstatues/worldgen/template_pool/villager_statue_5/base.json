@@ -28,6 +28,15 @@
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
       }
+    },
+    {
+      "weight": 3,
+      "element": {
+        "location": "cinchsvillagerstatues:villager_statues/villager_statue_5_base_4",
+        "processors": "cinchsvillagerstatues:villager_statue_5_processor",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
     }
   ]
 }
