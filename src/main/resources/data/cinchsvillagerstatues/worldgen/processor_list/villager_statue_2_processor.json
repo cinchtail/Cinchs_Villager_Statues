@@ -69,34 +69,7 @@
           }
         ]
       },
-      "limit": 10,
-      "processor_type": "minecraft:capped"
-    },
-    {
-      "delegate": {
-        "processor_type": "minecraft:rule",
-        "rules": [
-          {
-            "block_entity_modifier": {
-              "type": "minecraft:append_loot",
-              "loot_table": "cinchsvillagerstatues:pots/villager_statue_2"
-            },
-            "input_predicate": {
-              "predicate_type": "minecraft:tag_match",
-              "tag": "cinchsvillagerstatues:villager_statue_2_replaceable"
-            },
-            "location_predicate": {
-              "predicate_type": "minecraft:always_true"
-            },
-            "output_state": {
-              "Name": "minecraft:decorated_pot",
-              "Properties": {
-              }
-            }
-          }
-        ]
-      },
-      "limit": 6,
+      "limit": 12,
       "processor_type": "minecraft:capped"
     }
   ]
