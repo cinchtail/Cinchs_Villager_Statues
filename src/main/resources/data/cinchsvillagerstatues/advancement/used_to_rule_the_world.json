@@ -1,0 +1,153 @@
+{
+  "parent": "minecraft:adventure/root",
+  "criteria": {
+    "villager_statue_common": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "structures": "cinchsvillagerstatues:villager_statue_common"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:location"
+    },
+    "villager_statue_desert": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "structures": "cinchsvillagerstatues:villager_statue_desert"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:location"
+    },
+    "villager_statue_snowy": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "structures": "cinchsvillagerstatues:villager_statue_snowy"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:location"
+    },
+    "villager_statue_jungle": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "structures": "cinchsvillagerstatues:villager_statue_jungle"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:location"
+    },
+    "villager_statue_badlands": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "structures": "cinchsvillagerstatues:villager_statue_badlands"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:location"
+    },
+    "villager_statue_swamp": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "structures": "cinchsvillagerstatues:villager_statue_swamp"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:location"
+    },
+    "villager_statue_mangrove_swamp": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "structures": "cinchsvillagerstatues:villager_statue_mangrove_swamp"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:location"
+    }
+  },
+  "display": {
+    "description": "Find every villager statue!",
+    "frame": "challenge",
+    "icon": {
+      "count": 1,
+      "id": "minecraft:mossy_stone_bricks"
+    },
+    "title": "Used to Rule the World!"
+  },
+  "requirements": [
+    [
+      "villager_statue_common"
+    ],
+    [
+      "villager_statue_desert"
+    ],
+    [
+      "villager_statue_snowy"
+    ],
+    [
+      "villager_statue_jungle"
+    ],
+    [
+      "villager_statue_badlands"
+    ],
+    [
+      "villager_statue_swamp"
+    ],
+    [
+      "villager_statue_mangrove_swamp"
+    ]
+  ],
+  "rewards": {
+    "experience": 200
+  },
+  "sends_telemetry_event": true
+}
