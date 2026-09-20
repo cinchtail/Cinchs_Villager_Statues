@@ -1,21 +1,33 @@
 {
-	"schemaVersion": 1,
-	"id": "cinchsvillagerstatues",
-	"version": "${version}",
-	"name": "Cinch's Villager Statues",
-	"description": "Statues of villagers can be found around the world.",
-	"authors": [
-		"Cinchtail"
-	],
-	"contact": {
-		"homepage": "https://www.curseforge.com/minecraft/mc-mods/cinchs-villager-statues",
-		"sources": "https://github.com/cinchtail/Cinchs_Villager_Statues/tree/Forge-Fabric-1.21.x-26.2"
-	},
-	"license": "MIT",
-	"icon": "icon.png",
-	"environment": "*",
-	"depends": {
-		"fabricloader": ">=0.16.14",
-		"minecraft": ["1.21","1.21.1","1.21.2","1.21.3","1.21.4","1.21.5","1.21.6","1.21.7","1.21.8","1.21.9","1.21.10","1.21.11","26.1","26.1.1","26.1.2","26.2"]
-	}
+  "schemaVersion": 1,
+  "id": "${mod_id}",
+  "version": "${version}",
+  "name": "${mod_name}",
+  "description": "${mod_description}",
+  "authors": [
+    "${mod_authors}"
+  ],
+  "contact": {
+    "homepage": "${mod_homepage}",
+    "sources": "${mod_sources}"
+  },
+  "license": "${mod_license}",
+  "icon": "icon.png",
+  "environment": "*",
+  "depends": {
+    "fabricloader": ">=0.16.14",
+    "minecraft": ">=0.21.0"
+  },
+  "custom": {
+    "modmenu": {
+      "links": {
+        "modmenu.discord": "${mod_discord}",
+        "modmenu.curseforge": "${mod_curseforge}",
+        "modmenu.modrinth": "${mod_modrinth}",
+        "modmenu.kofi": "${mod_kofi}",
+        "modmenu.youtube": "${mod_youtube}"
+      },
+      "update_checker": true
+    }
+  }
 }
