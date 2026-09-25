@@ -21,7 +21,7 @@
     "depends": [
       {
         "id": "quilt_loader",
-        "versions": ">=1.21.0 <=26.2"
+        "versions": ">=0.21.0 <=26.2"
       }
     ]
   },
