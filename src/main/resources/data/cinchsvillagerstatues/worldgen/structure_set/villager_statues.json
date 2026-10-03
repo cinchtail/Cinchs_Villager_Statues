@@ -1,0 +1,38 @@
+{
+  "structures": [
+    {
+      "structure": "cinchsvillagerstatues:villager_statue_common",
+      "weight": 1
+    },
+    {
+      "structure": "cinchsvillagerstatues:villager_statue_desert",
+      "weight": 1
+    },
+    {
+      "structure": "cinchsvillagerstatues:villager_statue_snowy",
+      "weight": 1
+    },
+    {
+      "structure": "cinchsvillagerstatues:villager_statue_jungle",
+      "weight": 1
+    },
+    {
+      "structure": "cinchsvillagerstatues:villager_statue_badlands",
+      "weight": 1
+    },
+    {
+      "structure": "cinchsvillagerstatues:villager_statue_swamp",
+      "weight": 1
+    },
+    {
+      "structure": "cinchsvillagerstatues:villager_statue_mangrove_swamp",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 1642136474,
+    "spacing": 60,
+    "separation": 40,
+    "type": "minecraft:random_spread"
+  }
+}

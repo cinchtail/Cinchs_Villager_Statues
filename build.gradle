@@ -1,0 +1,140 @@
+plugins {
+    id 'java-library'
+    id 'maven-publish'
+    id 'net.neoforged.moddev' version '2.0.147'
+    id 'idea'
+}
+
+tasks.named('wrapper', Wrapper).configure {
+    distributionType = Wrapper.DistributionType.BIN
+}
+
+version = mod_version
+group = mod_group_id
+
+sourceSets.main.resources {
+    srcDir('src/generated/resources')
+
+    exclude("**/*.bbmodel")
+    exclude("src/generated/**/.cache")
+}
+
+repositories {
+}
+
+base {
+    archivesName = mod_id + "-[UNIVERSAL-26.3]"
+}
+
+def modName = (project.findProperty('mod_name') ?: project.name) as String
+def modLicense = (project.findProperty('mod_license') ?: project.name) as String
+def modId = project.findProperty('mod_id') as String
+def modDescription = project.findProperty('mod_description') as String
+def modAuthors = project.findProperty('mod_authors') as String
+def modHomepage = project.findProperty('mod_homepage') as String
+def modSources = project.findProperty('mod_sources') as String
+def modDiscord = project.findProperty('mod_discord') as String
+def modKofi = project.findProperty('mod_kofi') as String
+def modCurseforge = project.findProperty('mod_curseforge') as String
+def modModrinth = project.findProperty('mod_modrinth') as String
+def modYouTube = project.findProperty('mod_youtube') as String
+
+java.toolchain.languageVersion = JavaLanguageVersion.of(25)
+
+neoForge {
+    version = project.neo_version
+
+    runs {
+        client {
+            client()
+            systemProperty 'neoforge.enabledGameTestNamespaces', project.mod_id
+        }
+
+        server {
+            server()
+            programArgument '--nogui'
+            systemProperty 'neoforge.enabledGameTestNamespaces', project.mod_id
+        }
+
+        gameTestServer {
+            type = "gameTestServer"
+            systemProperty 'neoforge.enabledGameTestNamespaces', project.mod_id
+        }
+
+        data {
+            clientData()
+            programArguments.addAll '--mod', project.mod_id, '--all', '--output', file('src/generated/resources/').getAbsolutePath(), '--existing', file('src/main/resources/').getAbsolutePath()
+        }
+
+        configureEach {
+            systemProperty 'forge.logging.markers', 'REGISTRIES'
+
+            logLevel = org.slf4j.event.Level.DEBUG
+        }
+    }
+
+    mods {
+        "${mod_id}" {
+            sourceSet(sourceSets.main)
+        }
+    }
+}
+
+configurations {
+    runtimeClasspath.extendsFrom localRuntime
+}
+
+dependencies {
+}
+
+var generateModMetadata = tasks.register("generateModMetadata", ProcessResources) {
+    var replaceProperties = [
+            version                : version,
+            minecraft_version      : minecraft_version,
+            minecraft_version_range: minecraft_version_range,
+            neo_version            : neo_version,
+            mod_version            : mod_version,
+            mod_name               : modName,
+            mod_license            : modLicense,
+            mod_id                 : modId,
+            mod_description        : modDescription,
+            mod_authors            : modAuthors,
+            mod_homepage           : modHomepage,
+            mod_sources            : modSources,
+            mod_discord            : modDiscord,
+            mod_kofi               : modKofi,
+            mod_curseforge         : modCurseforge,
+            mod_modrinth           : modModrinth,
+            mod_youtube            : modYouTube,
+    ]
+    inputs.properties replaceProperties
+    expand replaceProperties
+    from "src/main/templates"
+    into "build/generated/sources/modMetadata"
+}
+sourceSets.main.resources.srcDir generateModMetadata
+neoForge.ideSyncTask generateModMetadata
+
+publishing {
+    publications {
+        register('mavenJava', MavenPublication) {
+            from components.java
+        }
+    }
+    repositories {
+        maven {
+            url "file://${project.projectDir}/repo"
+        }
+    }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8' 
+}
+
+idea {
+    module {
+        downloadSources = true
+        downloadJavadoc = true
+    }
+}

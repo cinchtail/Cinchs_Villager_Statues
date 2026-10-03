@@ -1,0 +1,24 @@
+{
+  "name": "cinchsvillagerstatues:villager_statue_7/start_pool",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "cinchsvillagerstatues:villager_statues/villager_statue_7",
+        "processors": "cinchsvillagerstatues:villager_statue_7_processor",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "cinchsvillagerstatues:villager_statues/villager_statue_7_emerald",
+        "processors": "cinchsvillagerstatues:villager_statue_7_processor",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}
