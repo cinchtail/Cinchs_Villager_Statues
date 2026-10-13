@@ -104,7 +104,6 @@
     "description": "Find every villager statue!",
     "frame": "challenge",
     "icon": {
-      "count": 1,
       "id": "minecraft:mossy_stone_bricks"
     },
     "title": "Used to Rule the World!"
