@@ -94,7 +94,6 @@ var generateModMetadata = tasks.register("generateModMetadata", ProcessResources
             minecraft_version      : minecraft_version,
             minecraft_version_range: minecraft_version_range,
             neo_version            : neo_version,
-            forge_version          : forge_version,
             mod_version            : mod_version,
             mod_name               : modName,
             mod_license            : modLicense,
@@ -114,13 +113,32 @@ var generateModMetadata = tasks.register("generateModMetadata", ProcessResources
     expand replaceProperties
     from "src/main/templates"
     into "build/generated/sources/modMetadata"
-
-    filesMatching(["fabric.mod.json", "quilt.mod.json"]) {
-        expand(replaceProperties)
-    }
 }
 sourceSets.main.resources.srcDir generateModMetadata
 neoForge.ideSyncTask generateModMetadata
+
+tasks.processResources {
+    def meta = [
+            version                : version,
+            minecraft_version      : minecraft_version,
+            minecraft_version_range: minecraft_version_range,
+            mod_version            : mod_version,
+            mod_name               : modName,
+            mod_license            : modLicense,
+            mod_id                 : modId,
+            mod_description        : modDescription,
+            mod_authors            : modAuthors,
+            mod_homepage           : modHomepage,
+            mod_sources            : modSources,
+            mod_issues             : modIssues,
+            mod_discord            : modDiscord,
+            mod_kofi               : modKofi,
+            mod_curseforge         : modCurseforge,
+            mod_modrinth           : modModrinth,
+            mod_youtube            : modYouTube,
+    ]
+    filesMatching(["fabric.mod.json", "quilt.mod.json"]) { expand(meta) }
+}
 
 publishing {
     publications {

@@ -21,7 +21,7 @@
     "depends": [
       {
         "id": "quilt_loader",
-        "versions": ">=26.3",
+        "versions": ">=0.30.0",
         "fabric-api": "*"
       }
     ]
