@@ -12,7 +12,8 @@
       },
       "contact": {
         "homepage": "${mod_homepage}",
-        "sources": "${mod_sources}"
+        "sources": "${mod_sources}",
+        "issues": "${mod_issues}"
       },
       "icon": "icon.png",
       "license": "${mod_license}"
